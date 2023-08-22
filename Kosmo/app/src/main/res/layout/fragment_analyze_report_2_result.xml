@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progressBackgroundTint="#D5D5D5"
+        android:progressTint="#F86621"
+        android:progress="80"/>
+    <TextView
+        android:id="@+id/total_food_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💊 홍성민님의 영양제가 총 11개 등록되었습니다"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_result_listview"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_border"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/request_analyze"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/analyze_new_button_bg"
+            android:text="분석 요청하기"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

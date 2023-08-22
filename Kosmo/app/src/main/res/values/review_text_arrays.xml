@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="review_question_first">
+        <item>1개월 미만</item>
+        <item>1~3개월</item>
+        <item>3~6개월</item>
+        <item>6개월~1년</item>
+        <item>1년 이상</item>
+    </string-array>
+    <string-array name="review_question_second">
+        <item>효과가 없었어요</item>
+        <item>감기 덜 걸림</item>
+        <item>구내염 개선</item>
+        <item>피로 개선</item>
+        <item>피부상태 개선</item>
+    </string-array>
+    <string-array name="review_question_third">
+        <item>부작용이 없었어요</item>
+        <item>변비</item>
+        <item>설사</item>
+        <item>어지러움</item>
+        <item>두통</item>
+    </string-array>
+</resources>

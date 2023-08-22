@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progressBackgroundTint="#D5D5D5"
+        android:progressTint="#F86621"
+        android:progress="20"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홍성민의 영양제 관련 취향입니다"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/analyze_rounded"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="섭취 목적"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/take_purpose_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#F86621"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:id="@+id/take_purposeBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="변경하기  >"
+                    android:textColor="#919191"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/take_purpose_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="#636363"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/analyze_rounded"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선호 제형"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/prefer_shapeBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="변경하기  >"
+                    android:textColor="#919191"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/prefer_shape_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="#636363"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/analyze_rounded"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선호 유형"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/prefer_typeBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="변경하기  >"
+                    android:textColor="#919191"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/prefer_type_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="해외 직구 제품, 관련 영양소를 한 번에"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="#636363"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_border"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/to_fragment_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/analyze_new_button_bg"
+            android:text="다음"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

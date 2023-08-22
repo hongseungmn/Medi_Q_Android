@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".FoodTableActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/foodTableBackButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_home_24"
+            android:scaleType="fitCenter"
+            android:layout_toLeftOf="@id/shareImage"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/shareImage"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_share_24"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+    <ImageView
+        android:id="@+id/food_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/destination_1"/>
+    <TextView
+        android:id="@+id/food_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:text="고려은단"
+        android:layout_marginTop="20dp"
+        android:textColor="#777777"/>
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비타민C 1000 이지"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:layout_margin="2dp">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="1"
+            android:rating="1"
+            android:progressTint="#DCC138"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            />
+        <TextView
+            android:id="@+id/starScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.4"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food_tabLayout"
+        app:tabGravity="fill"
+        android:layout_marginTop="5dp"
+        app:tabSelectedTextColor="#FD4B03"
+        app:tabTextColor="#606060"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabIndicatorColor="#FD4B03"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/food_viewPager"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_border"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/to_buy_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/analyze_new_button_reverse_bg"
+            android:textColor="#F86621"
+            android:text="구매하기" />
+        <Button
+            android:id="@+id/to_write_review_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/analyze_new_button_bg"
+            android:text="리뷰 작성하기" />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="😁 어떤 제형을 선호하시나요?"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="중복 선택이 가능합니다. (최대 3개)"
+        android:textColor="#9C9C9C" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/analyze_report_shape_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_border"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/save_prefer_shape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/analyze_new_button_bg"
+            android:text="저장하기"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

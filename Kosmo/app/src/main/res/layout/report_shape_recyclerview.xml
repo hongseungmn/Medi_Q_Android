@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:id="@+id/report_shape_recyclerview"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+    <ImageView
+        android:src="@drawable/jungjae"
+        android:background="@drawable/report_cardview_bg"
+        android:id="@+id/report_shape_recyclerView_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/report_shape_recyclerView_textview"
+        android:text="정제"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom">
+
+    </TextView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

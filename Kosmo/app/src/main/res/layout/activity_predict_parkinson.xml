@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baseLayout"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".predict.PredictParkinsonActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/predictBackButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/whiteGrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="30dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인공지능을 통한"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="질병 예측 예방 시스템 구축"
+                android:textColor="#EF605D"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/predict_bg"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="파킨슨(치매) 예측하기"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#3288CA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/parkinson_example_img"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parkinson_example"
+            android:background="@drawable/report_note"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold|italic"
+            android:text="왼쪽의 예시사진을 참고하여 \n아래 사각틀 안에 \n그림을 그려주세요!"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:background="@drawable/analyze_new_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="완료"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paintLayout"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/report_note"
+        android:orientation="vertical" />
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReviewActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/to_back_btn_inreview"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_home_24"
+            android:scaleType="fitCenter"
+            android:layout_toLeftOf="@id/shareImage"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/shareImage"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_share_24"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/review_food_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/destination_1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/review_food_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="고려은단"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#777777"/>
+                    <TextView
+                        android:id="@+id/review_food_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="비타민C 1000 이지"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingHorizontal="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영양제를 얼마나 드셨나요?"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_how_long_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="영양제에 만족하셨나요?"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="10dp"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"
+                android:progressTint="#DCC138"
+                android:progressBackgroundTint="@color/whiteGrey"
+                android:layout_gravity="left"
+                android:stepSize="1"
+                android:clickable="true"
+                style="@style/Widget.AppCompat.RatingBar"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="이 영양제를 먹고 일반적으로 느끼는 효과예요.\n어떤 효과를 느꼈나요?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가장 많이 느낀 효과를 선택해 주세요. (최대 5개)\n원하는 효과가 없을 경우 텍스트 후기에 남겨주세요!"
+                android:textColor="#6C6C6C"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_effect_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="어떤 부작용이 있었나요?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가장 많이 느낀 부작용을 선택해 주세요. (최대 5개)"
+                android:textColor="#6C6C6C"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_no_effect_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영양제에 대한 상세한 후기를 들려주세요!"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText android:id="@+id/EditText02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:scrollHorizontally="false"
+                android:background="@drawable/report_textview_bg"
+                android:minWidth="10.0dip"
+                android:maxWidth="5.0dip"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_border"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/to_complete_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/analyze_new_button_bg"
+            android:text="리뷰 작성완료"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

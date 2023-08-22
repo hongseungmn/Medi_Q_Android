@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="성분을 선택해 주세요"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="25dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_nutrient"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+
+                <RadioButton
+                    android:text="비타민A"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_a"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+
+                <RadioButton
+                    android:text="비타민B"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_b"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:layout_marginVertical="10dp"
+                    android:paddingHorizontal="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="비타민C"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_c"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="비타민D"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_d"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="비타민E"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_e"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="유산균"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/rg_vtm_p"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="오메가3"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_o"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="칼슘"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_k"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="마그네슘"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_m"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="루테인"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_vtm_r"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"
+                    android:layout_marginBottom="50dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".analyze.AnalyzeFragment">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/whiteGrey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/result_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023.8.03일 기준"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:padding="5dp"
+                    android:background="@drawable/hashtag_rounded"
+                    android:textColor="#FB4B16"/>
+                <TextView
+                    android:id="@+id/result_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="top"
+                    android:text="85"
+                    android:textColor="@color/black"
+                    android:textSize="100dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginVertical="40dp"
+                android:gravity="bottom"
+                android:text="점"
+                android:textColor="#595959"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/analyze_score_good"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/analyzeNewReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다시 분석하기"
+            android:textStyle="bold"
+            android:background="@drawable/analyze_new_button_bg"
+            android:layout_marginHorizontal="20dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_dialog_bg"
+                android:elevation="7dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="홍성민 님의 영양제 분석 리포트"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="성별 남 나이 24"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#595959"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="10"
+                    android:background="@drawable/report_note_result">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="🔥 대단해요! 계속 힘내볼까요?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/result_comment_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="▪ 홍성민님은 현재 2개의 목적을 위해 영양제를 섭취 중이시네요!"
+                        android:textColor="#474747"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:id="@+id/result_comment_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="▪ 11개의 영양제를 통해 26개의 영양소를 섭취하고 있어요."
+                        android:textColor="#474747"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"/>
+                    <TextView
+                        android:id="@+id/result_comment_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="▪ 과다 섭취 영양소 5개, 부족 섭취 영양소 5개로 홍성민님의 영양제 점수는 85점입니다."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="left"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="섭취 목적별 기능성 원료 분석"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:textColor="@color/black"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/result_report_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5대 영양소"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/report_note_result">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="현재 섭취하고 있는 \n5대 영양소입니다"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#1E6EE8"/>
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/take_good_nutrient"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fillViewport="true"
+                            >
+
+                        </androidx.core.widget.NestedScrollView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="현재 섭취하고 있지 않는 \n5대 영양소입니다"
+                            android:textStyle="italic"
+                            android:textColor="#F34242"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/take_bad_nutrient"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fillViewport="true"
+                            >
+
+                        </androidx.core.widget.NestedScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/result_report_progress_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

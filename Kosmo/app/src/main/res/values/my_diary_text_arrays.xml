@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mydiary_head_text">
+        <item>두통</item>
+        <item>어지러움</item>
+        <item>발열</item>
+        <item>편두통</item>
+        <item>메스꺼움</item>
+        <item>구토</item>
+    </string-array>
+    <string-array name="mydiary_breathe_text">
+        <item>기침</item>
+        <item>가래</item>
+        <item>호흡곤란</item>
+        <item>코막힘</item>
+    </string-array>
+    <string-array name="mydiary_stomach_text">
+        <item>복통</item>
+        <item>설사</item>
+        <item>변비</item>
+        <item>속쓰림</item>
+        <item>소화불량</item>
+        <item>경련</item>
+        <item>식욕감퇴</item>
+        <item>복부 팽만감</item>
+    </string-array>
+    <string-array name="mydiary_mental_text">
+        <item>우울</item>
+        <item>불면증</item>
+        <item>스트레스</item>
+        <item>감정기복</item>
+        <item>무기력</item>
+        <item>피곤함</item>
+        <item>집중력 감퇴</item>
+    </string-array>
+    <string-array name="mydiary_chest_text">
+        <item>호흡곤란</item>
+        <item>가슴통증</item>
+        <item>압박감</item>
+    </string-array>
+    <string-array name="mydiary_body_text">
+        <item>근육경련</item>
+        <item>부종</item>
+        <item>피부발진</item>
+        <item>체중변화</item>
+        <item>가려움</item>
+    </string-array>
+</resources>

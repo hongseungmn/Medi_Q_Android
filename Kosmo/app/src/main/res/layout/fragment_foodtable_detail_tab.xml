@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_foodTable_fragment"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="기능성"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:id="@+id/material"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="항산화 뼈건강"
+                    android:textSize="12dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cccccc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="제형"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:id="@+id/shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="정제"
+                    android:textSize="12dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cccccc"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="섭취 방법"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:id="@+id/intake"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1일 1회, 1회 2정(1,200mg)을 물과 함께 섭취하십시오."
+                android:textSize="12dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cccccc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="영양소"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:id="@+id/nutrient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="비타민C, 비타민D"
+                    android:textSize="12dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cccccc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="섭취 시 \n주의사항"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:id="@+id/caution"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:gravity="left"
+                    android:text="* 임산부와 수유기 여성은 섭취 시 전문가와 상담하시기 바랍니다.\n
+* 공복에 섭취 시 위장장애로 설사를 유발할 수 있으니 음식물과 함께 섭취하거나 식후에 섭취하십시오.\n
+* 알레르기 체질이신 경우 성분을 확인 후 섭취하십시오.\n
+* 제품이 변질 및 변색된 경우에는 섭취하지 마시고 소비자 상담실로 문의하시기 바랍니다.\n
+* 포장재에 의하여 상처를 입을 수 있으니 주의가 필요합니다.\n
+* 고칼슘혈증이 있거나 의약품 복용 시 전문가와 상담하십시오.\n
+* 이상 사례 발생 시 섭취를 중단하고 전문가와 상담하십시오."
+                    android:textSize="12dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cccccc"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

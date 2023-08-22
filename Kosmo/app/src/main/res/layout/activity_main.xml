@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <!--상단 타이틀바-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/maintitle"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/mainicon" />
+
+        <ImageView
+            android:id="@+id/maintitle"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/maintitle" />
+
+        <ImageButton
+            android:id="@+id/to_myInfo_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/mainuser"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"/>
+
+    <FrameLayout
+        android:id="@+id/containers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+    <!--하단 네비바-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@color/orange"
+        app:menu="@menu/bottom_menu"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

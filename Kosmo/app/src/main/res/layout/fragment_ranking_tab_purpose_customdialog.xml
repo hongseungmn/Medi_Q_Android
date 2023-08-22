@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="건강 고민을 선택해 주세요"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="25dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_purpose"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+
+                <RadioButton
+                    android:text="장 건강"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_1"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+
+                <RadioButton
+                    android:text="면역력 증진"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_2"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:layout_marginVertical="10dp"
+                    android:paddingHorizontal="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="스트레스 케어"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_3"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="활력 증진"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_4"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="시력 및 눈 피로감 케어"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_5"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="피부 건강"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/rg_pps_6"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="항산화"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_7"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="체지방 감소"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_8"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="간 건강"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_9"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"/>
+                <RadioButton
+                    android:text="뼈 건강"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_10"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"
+                    />
+                <RadioButton
+                    android:text="혈당 관리"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_11"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"
+                    />
+                <RadioButton
+                    android:text="콜레스테롤 개선"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/rg_pps_12"
+                    android:layout_width="match_parent"
+                    android:buttonTint="#F86621"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="50dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E8E8"
+                    android:layout_marginBottom="50dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

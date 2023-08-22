@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medi-Q에서 \n가장 많이 찾는 영양제에요"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자신에게 맞는 영양제를 찾아보세요! 😁"
+            android:textColor="#606060"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="전체"
+                android:layout_gravity="center"
+
+                android:textSize="15dp"
+                android:textColor="#606060"/>
+            <RadioGroup
+                android:id="@+id/radioGroup_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/radio_gender_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="전체"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radio_gender_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="남성"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radio_gender_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="여성"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="연령대"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#606060"/>
+            <RadioGroup
+                android:id="@+id/radioGroup_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/radio_age_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:text="전체"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radio_age_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:text="10대"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radio_age_twenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:text="20대"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radio_age_thirty"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:text="30대"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radio_age_forty"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:text="40대"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radio_age_fifty"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:button="@null"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:text="50대"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        app:tabGravity="fill"
+        android:layout_marginTop="5dp"
+        app:tabSelectedTextColor="#FD4B03"
+        app:tabTextColor="#606060"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabIndicatorColor="#FD4B03"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

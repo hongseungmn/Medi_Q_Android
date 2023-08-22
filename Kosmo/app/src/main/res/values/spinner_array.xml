@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test">
+        <item>비타민A</item>
+        <item>비타민B군</item>
+        <item>비타민C</item>
+        <item>비타민D</item>
+        <item>비타민E</item>
+        <item>유산균</item>
+        <item>오메가3</item>
+        <item>칼슘</item>
+        <item>마그네슘</item>
+        <item>루테인</item>
+    </string-array>
+</resources>

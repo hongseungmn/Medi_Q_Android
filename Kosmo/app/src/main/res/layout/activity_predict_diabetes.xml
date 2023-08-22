@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/predictBackButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/whiteGrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="30dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인공지능을 통한"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="질병 예측 예방 시스템 구축"
+                android:textColor="#EF605D"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/predict_bg"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당뇨병 수치 예측하기"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#3288CA"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연령"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <EditText
+        android:id="@+id/predict_diabetes_age"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_rounded_main"
+        android:gravity="center"
+        android:maxLines="1"
+        android:hint="연령을 입력해주세요"
+        android:textColorHint="#cccccc"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_margin="5dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <EditText
+        android:id="@+id/predict_diabetes_bmi"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_rounded_main"
+        android:gravity="center"
+        android:maxLines="1"
+        android:hint="BMI 지수를 입력해주세요"
+        android:textColorHint="#cccccc"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_margin="5dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="포도당"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <EditText
+        android:id="@+id/predict_diabetes_glucose"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_rounded_main"
+        android:gravity="center"
+        android:maxLines="1"
+        android:hint="포도당 수치를 입력해주세요"
+        android:textColorHint="#cccccc"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_margin="5dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="혈압"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <EditText
+        android:id="@+id/predict_diabetes_bloodpress"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_rounded_main"
+        android:gravity="center"
+        android:maxLines="1"
+        android:hint="혈압을 입력해주세요"
+        android:textColorHint="#cccccc"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_margin="5dp" />
+
+
+    <Button
+        android:id="@+id/predict_diabetes_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/analyze_new_button_bg"
+        android:text="분석하기"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

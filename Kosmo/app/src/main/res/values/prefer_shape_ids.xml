@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefer_shape_img_res_ids">
+        <item>@drawable/prefer_shape_01</item>
+        <item>@drawable/prefer_shape_02</item>
+        <item>@drawable/prefer_shape_03</item>
+        <item>@drawable/prefer_shape_04</item>
+        <item>@drawable/prefer_shape_05</item>
+        <item>@drawable/prefer_shape_06</item>
+        <item>@drawable/prefer_shape_07</item>
+        <item>@drawable/prefer_shape_08</item>
+        <item>@drawable/prefer_shape_09</item>
+        <item>@drawable/prefer_shape_10</item>
+        <item>@drawable/prefer_shape_11</item>
+        <item>@drawable/prefer_shape_12</item>
+    </string-array>
+    <string-array name="prefer_shape_string_ids">
+        <item>겔</item>
+        <item>과립</item>
+        <item>기타</item>
+        <item>바</item>
+        <item>분말</item>
+        <item>시럽</item>
+        <item>액상</item>
+        <item>정제</item>
+        <item>젤리</item>
+        <item>캡슐</item>
+        <item>페이스트</item>
+        <item>환</item>
+    </string-array>
+</resources>

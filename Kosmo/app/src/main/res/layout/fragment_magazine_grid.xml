@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/magazineGrid"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:columnCount="2"
+android:rowCount="5"
+android:paddingVertical="10dp">
+<!-- 첫 번째 열에 들어갈 LinearLayout -->
+    <!--분류 1 시작-->
+<LinearLayout
+    android:id="@+id/magazine_01"
+    android:layout_width="0dp"
+    android:layout_height="220dp"
+    android:layout_rowSpan="1"
+    android:layout_columnSpan="1"
+    android:layout_columnWeight="1"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <!-- 첫 번째 열에 들어갈 내용을 추가 -->
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:src="@drawable/main_thumbnail_magazine01"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="영양소 A-Z"
+        android:textColor="#FF1818"
+        android:background="@drawable/hashtag_magazine_1"
+        android:layout_margin="8dp"
+        android:textSize="10sp"
+        android:padding="5sp"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="브라운, 레드, 그린 프로폴리스?"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+</LinearLayout>
+<!-- 두 번째 열에 들어갈 LinearLayout -->
+<LinearLayout
+    android:id="@+id/magazine_02"
+    android:layout_width="0dp"
+    android:layout_height="220dp"
+    android:layout_rowSpan="1"
+    android:layout_columnSpan="1"
+    android:layout_columnWeight="1"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <!-- 두 번째 열에 들어갈 내용을 추가 -->
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/main_thumbnail_magazine01"/>
+    <TextView
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="영양소 A-Z"
+        android:textColor="#FF1818"
+        android:background="@drawable/hashtag_magazine_1"
+        android:layout_margin="8dp"
+        android:textSize="10sp"
+        android:padding="5sp"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="먹는 히알루론산은 효과가 없다던데, 그러면 주사로 맞아볼까?"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/magazine_03"
+    android:layout_width="0dp"
+    android:layout_height="220dp"
+    android:layout_rowSpan="1"
+    android:layout_columnSpan="1"
+    android:layout_columnWeight="1"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <!-- 첫 번째 열에 들어갈 내용을 추가 -->
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:src="@drawable/main_thumbnail_magazine01"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="영양소 A-Z"
+        android:textColor="#FF1818"
+        android:background="@drawable/hashtag_magazine_1"
+        android:layout_margin="8dp"
+
+        android:textSize="10sp"
+        android:padding="5sp"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="진짜 효과 있는 콜라겐을 고르는 법"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+</LinearLayout>
+<!-- 두 번째 열에 들어갈 LinearLayout -->
+<LinearLayout
+    android:id="@+id/magazine_04"
+    android:layout_width="0dp"
+    android:layout_height="220dp"
+    android:layout_rowSpan="1"
+    android:layout_columnSpan="1"
+    android:layout_columnWeight="1"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <!-- 두 번째 열에 들어갈 내용을 추가 -->
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/main_thumbnail_magazine01"/>
+    <TextView
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="영양소 A-Z"
+        android:textColor="#FF1818"
+        android:background="@drawable/hashtag_magazine_1"
+        android:layout_margin="8dp"
+        android:textSize="10sp"
+        android:padding="5sp"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="운동러들의 필수 보충제, 아르기닌의 부작용"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+    <!--분류 2 시작-->
+    <LinearLayout
+        android:id="@+id/magazine_05"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- 첫 번째 열에 들어갈 내용을 추가 -->
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:src="@drawable/main_thumbnail_magazine02"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="영양제 상식"
+            android:textColor="#189BFF"
+            android:background="@drawable/hashtag_magazine_2"
+            android:layout_margin="8dp"
+            android:textSize="10sp"
+            android:padding="5sp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="브라운, 레드, 그린 프로폴리스?"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- 두 번째 열에 들어갈 LinearLayout -->
+    <LinearLayout
+        android:id="@+id/magazine_06"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- 두 번째 열에 들어갈 내용을 추가 -->
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/main_thumbnail_magazine02"/>
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="영양제 상식"
+            android:textColor="#189BFF"
+            android:background="@drawable/hashtag_magazine_2"
+            android:layout_margin="8dp"
+            android:textSize="10sp"
+            android:padding="5sp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="먹는 히알루론산은 효과가 없다던데, 그러면 주사로 맞아볼까?"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/magazine_07"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- 첫 번째 열에 들어갈 내용을 추가 -->
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:src="@drawable/main_thumbnail_magazine02"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="영양제 상식"
+            android:textColor="#189BFF"
+            android:background="@drawable/hashtag_magazine_2"
+            android:layout_margin="8dp"
+
+            android:textSize="10sp"
+            android:padding="5sp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="진짜 효과 있는 콜라겐을 고르는 법"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- 두 번째 열에 들어갈 LinearLayout -->
+    <LinearLayout
+        android:id="@+id/magazine_08"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- 두 번째 열에 들어갈 내용을 추가 -->
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/main_thumbnail_magazine02"/>
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="영양제 상식"
+            android:textColor="#189BFF"
+            android:background="@drawable/hashtag_magazine_2"
+            android:layout_margin="8dp"
+            android:textSize="10sp"
+            android:padding="5sp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="운동러들의 필수 보충제, 아르기닌의 부작용"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!--분류 3 시작-->
+    <LinearLayout
+        android:id="@+id/magazine_09"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- 첫 번째 열에 들어갈 내용을 추가 -->
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:src="@drawable/main_thumbnail_magazine03"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="영양제 레시피"
+            android:textColor="#FFC518"
+            android:background="@drawable/hashtag_magazine_3"
+            android:layout_margin="8dp"
+
+            android:textSize="10sp"
+            android:padding="5sp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="진짜 효과 있는 콜라겐을 고르는 법"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- 두 번째 열에 들어갈 LinearLayout -->
+    <LinearLayout
+        android:id="@+id/magazine_10"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- 두 번째 열에 들어갈 내용을 추가 -->
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/main_thumbnail_magazine03"/>
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="영양제 레시피"
+            android:textColor="#FFC518"
+            android:background="@drawable/hashtag_magazine_3"
+            android:layout_margin="8dp"
+            android:textSize="10sp"
+            android:padding="5sp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="운동러들의 필수 보충제, 아르기닌의 부작용"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</GridLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "47875122284",
+    "project_id": "my-android-mediq",
+    "storage_bucket": "my-android-mediq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47875122284:android:be52b730768ba8601c6449",
+        "android_client_info": {
+          "package_name": "com.kosmo.kosmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47875122284-krst22jh4j1n9lnqgn7oer72m5e2e50f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFpNi0zIAa3DkvSD4S293Mo8gYjCMJsLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47875122284-krst22jh4j1n9lnqgn7oer72m5e2e50f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/magazine"
+        android:enabled="true"
+        android:icon = "@drawable/magazine"
+        android:title = "매거진"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/analyze"
+        android:enabled="true"
+        android:icon="@drawable/analyze"
+        android:title="분석/추천"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/main"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="홈"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/ranking"
+        android:enabled="true"
+        android:icon="@drawable/ranking"
+        android:title="랭킹"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/predict"
+        android:enabled="true"
+        android:icon="@drawable/predict"
+        android:title="예측"
+        app:showAsAction="always"/>
+</menu>

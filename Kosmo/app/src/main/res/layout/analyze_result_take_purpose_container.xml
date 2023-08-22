@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="10"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/report_note_result">
+        <TextView
+            android:id="@+id/take_purpose_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="두뇌활동"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/take_purpose_content_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="'두뇌활동' 에 도움이 되는 기능성 원료 6 가지 중 1 개 를 섭취하고 있습니다"
+            android:textSize="10dp"
+            android:layout_margin="5dp"
+            android:textColor="#474747" />
+        <TextView
+            android:id="@+id/take_purpose_content_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="복용 중이신 영양제 중 '두뇌활동' 에 도움이 되는 기능성 원료입니다"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:textColor="#171717" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/take_purpose_inner_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/take_purpose_recommand_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▪ '두뇌활동'에 좋은 추천 기능성 원료"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#171717" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/take_purpose_recommand_hashTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp">
+                </LinearLayout>
+            </HorizontalScrollView>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

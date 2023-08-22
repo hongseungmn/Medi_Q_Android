@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".analyze.AnalyzeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/analyze_fragment_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="bottom"
+                android:text="'???'님의 \n영양제 분석 리포트"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/analyze_title_img"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/analyzeNewReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="새로 분석하기"
+            android:textStyle="bold"
+            android:background="@drawable/analyze_new_button_bg"
+            android:layout_marginHorizontal="20dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_dialog_bg"
+                android:elevation="7dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="최근 분석 리포트"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="10"
+                    android:background="@drawable/report_note">
+                    <LinearLayout
+                        android:paddingVertical="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2023.07.08 기준"
+                            android:textStyle="bold"
+                            android:padding="3dp"
+                            android:layout_marginLeft="60dp"
+                            android:textSize="10dp"
+                            android:background="@drawable/hashtag_rounded"
+                            android:textColor="#FB4B16"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="43 점"
+                            android:textStyle="italic|bold"
+                            android:padding="3dp"
+                            android:layout_marginLeft="60dp"
+                            android:textSize="25dp"
+                            android:textColor="@color/black"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="13dp"
+                                android:text="섭취 목적"
+                                android:layout_marginLeft="60dp"
+                                android:textColor="#616161"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="장 건강 외 2"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="20dp"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=">"
+                                android:textSize="20sp"
+                                android:textColor="#919191"
+                                android:layout_marginRight="40dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/report_note_side_defualt"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="저장된 리포트"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:textColor="@color/black"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/analyze_fragment_analyze_linearView">
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
