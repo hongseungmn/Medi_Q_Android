@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kosmo.kosmo.R;
@@ -29,11 +30,12 @@ public class AnalyzeReportFragment_1_type extends Fragment implements View.OnCli
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         fragmentAnalyzeReport1TypeBinding = FragmentAnalyzeReport1TypeBinding.inflate(getLayoutInflater());
-        String[] test = {"1","2","3","4","5","6","7","8"};
+        String[] test = {"비싸더라도 좋은 원료","딱 필요한 만큼만","딱 한가지 핵심 원료만","관련 영양소를 한 번에","낱개 포장","최대한 많은 양","하루 한번 만","가성비"};
         analyzeReportFragment_1_type_adaptor = new AnalyzeReportFragment_1_type_Adaptor(test);
         fragmentAnalyzeReport1TypeBinding.analyzeReportTypeRecyclerView.setAdapter(analyzeReportFragment_1_type_adaptor);
         recyclerView = fragmentAnalyzeReport1TypeBinding.analyzeReportTypeRecyclerView;
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        LinearLayoutManager layoutManager3 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         fragmentAnalyzeReport1TypeBinding.savePreferType.setOnClickListener(this);
         return fragmentAnalyzeReport1TypeBinding.getRoot();
     }

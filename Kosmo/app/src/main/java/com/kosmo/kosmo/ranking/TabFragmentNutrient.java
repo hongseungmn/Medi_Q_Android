@@ -44,7 +44,9 @@ public class TabFragmentNutrient extends Fragment implements DialogInterface.OnD
         textView.setOnClickListener(view -> {
             customDialog = new TabFragmentNutrientCustomDialog(getContext(),view);
             customDialog.setOnDismissListener(this);
-            customDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            int alpha = 50;
+            int color = Color.argb(alpha, 0, 0 , 0);
+            customDialog.getWindow().setBackgroundDrawable(new ColorDrawable(color));
             customDialog.show();
         });
         return originalLayout.getRootView();

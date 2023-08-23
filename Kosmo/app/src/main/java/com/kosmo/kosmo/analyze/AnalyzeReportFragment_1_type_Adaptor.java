@@ -71,6 +71,7 @@ public class AnalyzeReportFragment_1_type_Adaptor extends RecyclerView.Adapter<A
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
         viewHolder.getTextView().setTag("타입태그번호 : "+position);
         viewHolder.getTextView().setTag(R.id.is_selected,false);
+        viewHolder.getTextView().setText(localDataSet[position]);
         viewHolder.getTextView().setOnClickListener(this);
 
     }

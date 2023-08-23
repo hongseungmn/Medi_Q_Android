@@ -153,7 +153,7 @@
                 android:id="@+id/prefer_type_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="해외 직구 제품, 관련 영양소를 한 번에"
+                android:text=""
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 android:textColor="#636363"/>

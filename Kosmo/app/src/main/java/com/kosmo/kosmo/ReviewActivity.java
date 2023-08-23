@@ -65,7 +65,6 @@ public class ReviewActivity extends AppCompatActivity implements View.OnClickLis
         String[] thirdStringArray = getResources().getStringArray(R.array.review_question_third);
         ReviewActivityAdapter reviewActivityAdapter3 = new ReviewActivityAdapter(thirdStringArray);
         reviewNoEffectRecyclerView.setAdapter(reviewActivityAdapter3);
-
         reviewNoEffectRecyclerView.setLayoutManager(layoutManager3);
     }
 
